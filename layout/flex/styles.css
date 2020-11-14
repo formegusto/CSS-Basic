@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background: lightgoldenrodyellow;
+}
+
+.item {
+    background: yellowgreen;
+}
+
+.item:nth-child(1) {
+    flex: 1;
+    order: 2;
+}
+
+.item:nth-child(2) {
+    flex: 3;
+    order: 3;
+}
+
+.item:nth-child(3) {
+    flex: 1;
+    order: 1;
+}
+
+.item:nth-child(odd) {
+    background: darkorange;
+}
