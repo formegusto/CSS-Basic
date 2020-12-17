@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS02_CSS px, %, em</title>
+        <link rel="stylesheet" type="text/css" href="/public/reset.css" />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <style>
+            body {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 1.5em; /* 글자 크기 */
+                /* 없으면 body안의 요소이기 때문에 16px이 먹힌다
+                    하지만 위 속성 적용 시 16 * 1.5 px이 먹힌다. */
+            }
+            h2 {
+                font-size: 1.2em;
+                /* 16 * 1.2 */
+            }
+            p {
+                font-size: 1.5em;
+                /* 16 * 1.5 */
+                width: 20em;
+                /* em의 정확한 명칭은 font-size로 font-size를 기본으로 한다
+                 해당 p 태그의 font-size는 16 * 1.5 이므로 여기에
+                 16 * 1.5 * 20 = 480 이 width의 길이가 된다.
+                */
+                background-color: green;
+            }
+            span {
+                font-size: 0.8em;
+                /* 16 * 1.5 * 0.8 */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css 기본 문법</h1>
+        <h2>길이 단위</h2>
+        <p>
+            <span>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </body>
+</html>
