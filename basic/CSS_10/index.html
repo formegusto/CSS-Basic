@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>letter-spacing, word-spacing, line-height</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <style type="text/css">
+            body {
+                font-family: '돋움', dotum, helvetica, sans-serif;
+                font-size: 12px;
+            }
+            h1 {
+                font-size: 3em;
+                font-weight: normal;
+                text-decoration: line-through;
+                /*
+                    underline : 밑줄
+                    line-through : 글자 사이에 줄
+                        eq ) <del> </del> 
+                    overline : 윗줄
+                */
+            }
+            em, address {
+                font-style: normal;
+            }
+
+            del {
+                font-style: italic;
+            }
+
+            .left {
+                text-align: left;
+            }
+            .center {
+                text-align: center;
+            }
+            .right {
+                text-align: right;
+            }
+
+            .etc {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>  
+            <h1>글자의 정렬</h1>
+            <del>del test</del>
+            <p class="left">
+                <em>Lorem Ipsum</em> is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p class="center">
+                <em>Lorem Ipsum</em> is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p class="right">
+                <em>Lorem Ipsum</em> is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <address>
+                &copy; all right reserved.
+                contact us.
+            </address>
+            <p class="etc"> 
+                <span>line element</span>
+                <span>line element</span>
+                <span>line element</span>
+            </p>
+    </body>
+</html>
