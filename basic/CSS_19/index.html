@@ -17,21 +17,40 @@
                     font-family: arial, sans-serif;
                 */
             }
+
             .boxmodel {
-                border: 5px solid red;
-
-                border-radius: 20px 10px 5px 0px;
-
+                display: block;
+                border: 5px solid black;
                 width: 500px;
-                padding: 10px;
-                margin: 10px;
+                padding: 10px 50px 100px 20px;
+                margin: 0 auto;
             }
+            
             .circle {
                 width: 300px;
                 height: 300px;
                 background: green;
                 color: #fff;
                 border: 2px solid black;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 300px;
+                font-size: 5em;
+            }
+
+            .box {
+                width: 500px;
+                border: 3px solid;
+                background: #ddd;
+                margin: 20px;
+                /*
+                    서로 마진이 겹치면 중첩된다 즉, 하나만 나온다는 소리
+                    이 것은 세로에만 적용된다.
+
+                */
+            }
+            .second {
+                margin-top: 40px;
             }
         </style>
     </head>
@@ -47,8 +66,21 @@
                 more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
         </div>
+        <span>
+            inline element
+        </span>
         <div class="circle">
             circle
+        </div>
+        
+        <div class="box">
+            box
+        </div>
+        <div class="box second">
+            box
+        </div>
+        <div class="box">
+            box
         </div>
     </body>
 </html>
