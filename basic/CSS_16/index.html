@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Background</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        <style type="text/css">
+            .bg {
+                width: 300px;
+                height: 300px;
+
+                background-image: url(./bg.png);
+                    /* 이미지가 하나짜리인데 반복이 되어있다. 
+                    그것은 아래 속성이 repeat가 기본값이기 때문.*/
+                background-repeat: no-repeat;
+                    /* 
+                        no-repeat: repeat 없애기
+                        repeat-x: x축으로 반복
+                        repeat-y: y축으로 반복
+                    */
+                background-position: center top;
+                    /*
+                        기본적으로 left top
+                        (가로 세로)
+
+                    */
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+
+        </div>
+    </body>
+</html>
